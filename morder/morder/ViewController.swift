@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK : Properties
+    @IBOutlet weak var mealOrderTextField: UITextField!
+    @IBOutlet weak var mealOrderLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +26,10 @@ class ViewController: UIViewController {
     }
 
 
+    //MARK : Actions
+    @IBAction func mealOrderLabelName(_ sender: UIButton) {
+        mealOrderTextField.text = "Deafult Meal Order"
+    }
+    
 }
 
